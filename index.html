@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/e4b7b68f80.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="cont_main">
+      <header class="cont_header">
+        <div class="profile_pic"></div>
+        <div class="profile_info">
+          <h1>Артём Баздрев</h1>
+          <p>
+            Рассматриваю IT вакансии в <br />
+            <span>веб-разработке</span> и
+            <span>тестировании</span>
+          </p>
+        </div>
+        <div class="profile_tags mobile_hide">
+          <h3><i class="fas fa-code"></i>Frontend</h3>
+          <div class="profile_tags_items">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Javas(S)cript</span>
+            <span>jQuery</span>
+            <span>Python</span>
+          </div>
+          <h3><i class="fas fa-terminal"></i>QA</h3>
+          <div class="profile_tags_items">
+            <span>Pyt(T)est</span>
+            <span>Unittest</span>
+            <span>Selenium</span>
+            <span>Page Object</span>
+          </div>
+        </div>
+      </header>
+      <section class="cont_contact_links">
+        <a href="tg://resolve?domain=soulboy_tg" class="contact_links">
+          <i class="fab fa-telegram-plane"></i>
+          @soulboy_tg
+        </a>
+        <a
+          href="mailto:artembazdrev.work@gmail.com"
+          class="contact_links mobile_hide"
+        >
+          <i class="fas fa-envelope"></i>
+          artembazdrev.work@gmail.com
+        </a>
+      </section>
+      <!--Interactive-->
+      <section class="cont_section">
+        <div class="section_header">
+          <i class="fas fa-ghost section_header_icon"></i>
+          <div class="section_header_text">
+            <p>Интерактивные проекты</p>
+            <p class="mobile_hide">
+              Взаимодействие с пользователем&nbsp
+              <span>(Javascript/jQuery)</span>
+            </p>
+          </div>
+          <div class="section_header_tag_icons mobile_hide">
+            <i class="fab fa-js col_yellow"></i>
+            <i></i>
+          </div>
+        </div>
+        <div class="section_body">
+          <article
+            class="project_card"
+            onclick="location.href='https://soulllboy.github.io/figClicker/'"
+          >
+            <img
+              src="images/project_card_covers/chair_clicker.png"
+              alt="Screenshot of 'Chair Clicker' page"
+            />
+            <p>Game</p>
+            <p>Chair Clicker</p>
+          </article>
+          <article
+            class="project_card"
+            onclick="location.href='https://soulllboy.github.io/fPost/'"
+          >
+            <img
+              src="images/project_card_covers/news_feed.png"
+              alt="Screenshot of 'News Feed' page"
+            />
+            <p>Create, Edit, Delete</p>
+            <p>News Feed Editor</p>
+          </article>
+          <article class="project_card mobile_hide"></article>
+        </div>
+      </section>
+      <!--Frontend-->
+      <section class="cont_section">
+        <div class="section_header">
+          <i class="fas fa-star section_header_icon"></i>
+          <div class="section_header_text">
+            <p>Frontend приложений</p>
+            <p class="mobile_hide">
+              Вёрстка сайтов и приложений&nbsp
+              <span>(HTML/CSS)</span>
+            </p>
+          </div>
+          <div class="section_header_tag_icons mobile_hide">
+            <i class="fab fa-css3-alt col_blue"></i>
+            <i class="fab fa-html5 col_red"></i>
+          </div>
+        </div>
+        <div class="section_body">
+          <article
+            class="project_card"
+            onclick="location.href='https://soulllboy.github.io/fMarket/'"
+          >
+            <img
+              src="images/project_card_covers/freelance_market.png"
+              alt="Screenshot of 'Freelance Market' page"
+            />
+            <p>E-commerce</p>
+            <p>Freelance Market</p>
+          </article>
+          <article
+            class="project_card"
+            onclick="location.href='https://soulllboy.github.io/fFreebies/'"
+          >
+            <img
+              src="images/project_card_covers/cryptomarket.png"
+              alt="Screenshot of 'CryptoWallet Dashboard' page"
+            />
+            <p>Dashboard</p>
+            <p>CryptoWallet Dashboard</p>
+          </article>
+          <article class="project_card mobile_hide"></article>
+        </div>
+      </section>
+      <!--Web-->
+      <section class="cont_section">
+        <div class="section_header">
+          <i class="fas fa-window-maximize section_header_icon"></i>
+          <div class="section_header_text">
+            <p>Веб элементы</p>
+            <p class="mobile_hide">
+              Вёрстка базовых элементов&nbsp
+              <span>(HTML/CSS)</span>
+            </p>
+          </div>
+          <div class="section_header_tag_icons mobile_hide">
+            <i class="fab fa-css3-alt col_blue"></i>
+            <i class="fab fa-html5 col_red"></i>
+          </div>
+        </div>
+        <div class="section_body">
+          <article
+            class="project_card"
+            onclick="location.href='https://soulllboy.github.io/fPaymentDetails/'"
+          >
+            <img
+              src="images/project_card_covers/checkout_form.png"
+              alt="Screenshot of 'Payment Details Form' page"
+            />
+            <p>E-commerce</p>
+            <p>Payment Details Form</p>
+          </article>
+          <article
+            class="project_card"
+            onclick="location.href='https://soulllboy.github.io/fWorkflowy/'"
+          >
+            <img
+              src="images/project_card_covers/workflowy.png"
+              alt="Screenshot of 'Workflowy Update Popup' page"
+            />
+            <p>System</p>
+            <p>Workflowy Update Popup</p>
+          </article>
+          <article
+            class="project_card"
+            onclick="location.href='https://soulllboy.github.io/fActivity/'"
+          >
+            <img
+              src="images/project_card_covers/activity.png"
+              alt="Screenshot of 'Activity History' page"
+            />
+            <p>System</p>
+            <p>Activity History</p>
+          </article>
+          <article
+            class="project_card"
+            onclick="location.href='https://soulllboy.github.io/fLoginForm/'"
+          >
+            <img
+              src="images/project_card_covers/login_page.png"
+              alt="Screenshot of 'Login Form' page"
+            />
+            <p>System</p>
+            <p>Login Form</p>
+          </article>
+          <article class="project_card mobile_hide"></article>
+        </div>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
