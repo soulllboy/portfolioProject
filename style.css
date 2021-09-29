@@ -46,7 +46,7 @@ h3 {
 }
 .cont_main {
   width: 1040px;
-  margin: 50px clamp(0px, calc((100vw - 1040px) / 2), 440px) 0px;
+  margin: 80px clamp(0px, calc((100vw - 1040px) / 2), 440px) 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,7 +70,7 @@ h3 {
       rgba(145, 71, 255, 0.3) 0%,
       rgba(145, 71, 255, 0) 100%
     ),
-    url(images/Profile_Image.png), rgba(226, 226, 226, 0.6);
+    url(images/Profile_Image.png), var(--grey-light-op60);
   box-shadow: 0px 4px 12px rgba(145, 71, 255, 0.25);
   border-radius: 32px;
 }
@@ -147,7 +147,7 @@ h3 {
   transition: 0.5s;
 }
 .contact_links:hover i {
-  color: var(--purple-deep);
+  color: var(--purple-deep-op60);
 }
 .cont_contact_links:link,
 .cont_contact_links:visited {
@@ -157,7 +157,8 @@ h3 {
 .contact_links:hover,
 .contact_links:active {
   border: 1px solid var(--purple-deep-op60);
-  filter: drop-shadow(0px 2px 16px var(--purple-deep-op60));
+  /*filter: drop-shadow(0px 2px 16px var(--purple-deep-op60));*/
+  box-shadow: 0px 2px 16px var(--purple-deep-op60);
 }
 
 .cont_section {
@@ -241,12 +242,16 @@ h3 {
   align-items: flex-start;
   padding: 0px;
   margin-top: 40px;
+  text-decoration: none;
 }
 .project_card img {
   width: 320px;
   height: 240px;
   border-radius: 24px;
   margin-bottom: 20px;
+  border: 1px solid rgba(220, 224, 226, 0.8);
+  box-shadow: 0px 2px 8px rgba(42, 49, 53, 0.08);
+  transition: 0.5s;
 }
 .project_card :nth-child(2) {
   color: var(--purple-deep);
@@ -269,8 +274,15 @@ h3 {
 .project_card:hover {
   cursor: pointer;
 }
+.project_card.mobile_hide:hover {
+  cursor: default;
+}
 .project_card:hover p {
   opacity: 1;
+}
+.project_card:hover img {
+  border: 1px solid var(--grey-light);
+  box-shadow: 0px 2px 8px rgba(42, 49, 53, 0.2);
 }
 .col_yellow {
   color: var(--yellow-deep);
