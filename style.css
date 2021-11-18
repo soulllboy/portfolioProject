@@ -20,6 +20,21 @@ body {
   background: var(--bg-color);
 }
 
+.lang_switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 20px;
+}
+.lang_switcher a {
+  text-decoration: none;
+  color: var(--grey-light);
+}
+.lang_switcher a:hover {
+  color: var(--grey-deep);
+}
+
 h1,
 h2,
 h3 {

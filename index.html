@@ -21,11 +21,15 @@
 
   <body>
     <div class="cont_main">
+      <div class="lang_switcher">
+        <a href="#" onclick="setLang('en')">EN</a>
+        <a href="#" onclick="setLang('ru')">RU</a>
+      </div>
       <header class="cont_header">
         <div class="profile_pic"></div>
         <div class="profile_info">
           <h1>Артём Баздрев</h1>
-          <p>
+          <p id="lang_title">
             Рассматриваю IT вакансии в <br />
             <span>веб-разработке</span> и
             <span>тестировании</span>
@@ -67,8 +71,8 @@
         <div class="section_header">
           <i class="fas fa-ghost section_header_icon"></i>
           <div class="section_header_text">
-            <p>Интерактивные проекты</p>
-            <p class="mobile_hide">
+            <p id="lang_section01">Интерактивные проекты</p>
+            <p class="mobile_hide" id="lang_section01_sub">
               Взаимодействие с пользователем&nbsp
               <span>(Javascript/jQuery)</span>
             </p>
@@ -111,8 +115,8 @@
         <div class="section_header">
           <i class="fas fa-star section_header_icon"></i>
           <div class="section_header_text">
-            <p>Frontend приложений</p>
-            <p class="mobile_hide">
+            <p id="lang_section02">Frontend приложения</p>
+            <p class="mobile_hide" id="lang_section02_sub">
               Вёрстка сайтов и приложений&nbsp
               <span>(HTML/CSS)</span>
             </p>
@@ -155,8 +159,8 @@
         <div class="section_header">
           <i class="fas fa-window-maximize section_header_icon"></i>
           <div class="section_header_text">
-            <p>Веб элементы</p>
-            <p class="mobile_hide">
+            <p id="lang_section03">Веб элементы</p>
+            <p class="mobile_hide" id="lang_section03_sub">
               Вёрстка базовых элементов&nbsp
               <span>(HTML/CSS)</span>
             </p>
