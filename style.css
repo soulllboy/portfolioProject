@@ -29,8 +29,11 @@ body {
 }
 .lang_switcher a {
   text-decoration: none;
-  color: var(--grey-light);
+  color: var(--grey-light-op60);
 }
+/*.lang_switcher :last-child {
+  color: #cecece;
+}*/
 .lang_switcher a:hover {
   color: var(--grey-deep);
 }

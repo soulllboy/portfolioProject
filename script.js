@@ -2,14 +2,13 @@ var en = {
   welcome: "Hello",
   name: "Artem Bazdrev", // h1
   title:
-    "Considering IT vacancies in <br /><span>web development</span> and <span>testing</span>", // #lang_title
-  section01: "Interactive projects", // #lang_section01
-  section01_sub: "User interaction&nbsp <span>(Javascript/jQuery)</span>", // #lang_section01_sub
-  section02: "Frontend applications", // #lang_section02
-  section02_sub:
-    "Layout for websites and applications&nbsp <span>(HTML/CSS)</span>", // #lang_section02_sub
-  section03: "Web elements", // #lang_section03
-  section03_sub: "Layout for basic elements&nbsp <span>(HTML/CSS)</span>", // #lang_section03_sub
+    "Looking for <span>Frontend</span> <br /> and <span>QA Tech</span> Positions", // #lang_title
+  section01: "Interactive Projects", // #lang_section01
+  section01_sub: "User Interaction&nbsp <span>(Javascript/jQuery)</span>", // #lang_section01_sub
+  section02: "Frontend Applications", // #lang_section02
+  section02_sub: "App & B2C Layouts&nbsp <span>(HTML/CSS)</span>", // #lang_section02_sub
+  section03: "Web Elements", // #lang_section03
+  section03_sub: "Basic Web Elements Layout&nbsp <span>(HTML/CSS)</span>", // #lang_section03_sub
 };
 
 var ru = {
@@ -38,6 +37,11 @@ function setLang(newLang) {
 }
 
 function implementLang() {
+  /*enEl = document.getElementsByClassName("lang_switcher")[0].firstElementChild;
+  ruEl = document.getElementsByClassName("lang_switcher")[0].lastElementChild;
+  flexColor = enEl.style.color;
+  enEl.style.color = ruEl.style.color;
+  ruEl.style.color = flexColor;*/
   document.getElementsByTagName("h1")[0].innerHTML = lang.name;
   document.getElementById("lang_title").innerHTML = lang.title;
   document.getElementById("lang_section01").innerHTML = lang.section01;
