@@ -46,7 +46,7 @@ h3 {
 }
 .cont_main {
   width: 1040px;
-  margin: 80px clamp(0px, calc((100vw - 1040px) / 2), 440px) 80px;
+  margin: 80px clamp(0px, calc((100vw - 1040px) / 2), 100%) 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
